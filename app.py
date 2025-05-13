@@ -94,7 +94,7 @@ def index():
                             ilce, il = il, ilce  # İl ve ilçeyi yer değiştir
                         
                         telefon = lines[3].strip()
-                        ucret = lines[4].strip().replace("TL", "").replace("tl", "")
+                        ucret = lines[4].strip().replace("TL", "").replace("tl", "").replace("Tl", "")
                         urun_bilgisi = '\n'.join(lines[6:]).strip()
                     else:
                         flash('İlçe ve il bilgisi yanlış formatta', 'error')
